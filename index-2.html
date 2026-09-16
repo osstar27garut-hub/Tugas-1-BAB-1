@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Book Biologi XII | Tugas 1 Interaktif</title>
+<style>
+:root{--green:#bdf1a2;--green2:#eaffdf;--dark:#36533b;--purple:#be4dcc;--ink:#23352a;--white:#fffdf8;--red:#c64a4a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#effbe8;color:var(--ink);font-family:Segoe UI,Arial,sans-serif;line-height:1.65}
+header{min-height:75vh;padding:45px 7%;display:flex;align-items:center;position:relative;overflow:hidden;background:repeating-conic-gradient(from 0deg at 50% 50%,#d2f6bd 0 12deg,#b9eda1 12deg 24deg)}
+header:after{content:"";position:absolute;left:-5%;right:-5%;bottom:-22%;height:38%;background:#effbe8;border-radius:50%}
+.hero{max-width:850px;position:relative;z-index:1}.brand{position:absolute;right:7%;top:25px;color:#2596a6;font-size:1.5rem;font-weight:800}
+.kicker,.pill{display:inline-block;background:var(--dark);color:white;border-radius:999px;padding:5px 13px;font-weight:800}
+h1{font-size:clamp(2.5rem,7vw,6rem);line-height:1;letter-spacing:-4px;color:var(--dark);margin:25px 0}h1 span{color:var(--purple);text-shadow:3px 3px white}
+h2{color:var(--dark);font-size:clamp(1.8rem,4vw,3rem);line-height:1.1}h3{color:var(--dark)}
+nav{position:sticky;top:0;z-index:10;background:#fffffff0;border-bottom:1px solid #d7e9cd}.navin{display:flex;gap:8px;overflow:auto;padding:10px 18px;max-width:1200px;margin:auto}nav a{white-space:nowrap;text-decoration:none;color:var(--dark);font-weight:800;padding:7px 12px;border-radius:999px}nav a:hover{background:var(--green)}
+main{max-width:1200px;margin:auto;padding:20px 18px 65px}section{margin:45px 0;scroll-margin-top:75px}.head{display:flex;gap:14px;align-items:flex-start}.num{background:var(--purple);color:white;padding:7px 13px;border-radius:15px;font-weight:900}
+.card{background:#ffffffed;border:2px solid #d7eacc;border-radius:24px;padding:24px;margin:18px 0;box-shadow:0 10px 28px #355c3210}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.btn{border:0;background:var(--purple);color:white;padding:12px 18px;border-radius:999px;font-weight:900;cursor:pointer}.btn.secondary{background:white;color:var(--dark);border:2px solid var(--dark)}
+input,select,textarea{width:100%;padding:11px;border:1px solid #b6d3a7;border-radius:10px;font:inherit;background:#fff}.question{padding:16px;margin:14px 0;background:#f7fff2;border:1px solid #d9edcd;border-radius:16px}.question label{display:block;margin:5px 0;cursor:pointer}.question input{width:auto;margin-right:8px}
+.feedback{font-weight:800;margin-top:7px}.correct{color:#247b43}.wrong{color:var(--red)}
+table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden}th,td{padding:12px;border-bottom:1px solid #e5eee0;text-align:left}th{background:var(--dark);color:white}
+.result{display:none;background:linear-gradient(135deg,#fff,#efffe5);border:3px solid var(--purple);border-radius:24px;padding:25px;margin-top:22px}.score{font-size:3.5rem;font-weight:900;color:var(--purple);line-height:1}.callout{border-left:7px solid var(--purple);background:#fff7ff;padding:16px 20px;border-radius:12px}.small{font-size:.9rem;color:#647864}
+.rank-badge{font-weight:900;color:var(--purple)}footer{background:var(--dark);color:white;text-align:center;padding:35px}
+@media print{nav,.btn{display:none}body{background:white}.card{box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">BIOLOGI XII</div>
+<div class="hero">
+<span class="kicker">BAB 1 • SEMESTER 1</span>
+<h1>Enzim <span>&</span><br>Metabolisme</h1>
+<p>Belajar melalui materi ringkas, latihan interaktif, penilaian otomatis, dan papan peringkat kelas.</p>
+<a class="btn" href="#tugas1">Mulai Tugas 1 →</a>
+</div>
+</header>
+
+<nav><div class="navin">
+<a href="#materi">Materi</a><a href="#tugas1">Tugas 1</a><a href="#hasil">Hasil</a><a href="#ranking">Perangkingan</a>
+</div></nav>
+
+<main>
+<section id="materi">
+<div class="head"><span class="num">01</span><div><h2>Materi Singkat</h2><p>Enzim adalah biokatalisator yang mempercepat reaksi biologis dengan menurunkan energi aktivasi tanpa habis atau berubah menjadi produk.</p></div></div>
+<div class="grid">
+<div class="card"><h3>Struktur</h3><p><b>Sisi aktif</b> adalah tempat substrat berikatan. <b>Apoenzim</b> merupakan bagian protein, sedangkan <b>kofaktor</b> adalah komponen nonprotein. Gabungannya disebut <b>holoenzim</b>.</p></div>
+<div class="card"><h3>Sifat enzim</h3><p>Enzim bekerja spesifik, dapat digunakan berulang kali, tidak menjadi produk, dan aktivitasnya dipengaruhi suhu, pH, serta konsentrasi zat.</p></div>
+<div class="card"><h3>Mekanisme</h3><p>Enzim + substrat → kompleks enzim-substrat → produk + enzim. Enzim tetap tersedia untuk reaksi berikutnya selama tidak rusak.</p></div>
+<div class="card"><h3>Metabolisme</h3><p>Katabolisme menguraikan molekul dan umumnya menghasilkan energi. Anabolisme menyusun molekul dan membutuhkan energi. ATP menjadi pembawa energi sel.</p></div>
+</div>
+</section>
+
+<section id="tugas1">
+<div class="head"><span class="num">02</span><div><h2>Tugas 1 — Enzim dalam Kehidupan</h2><p>Isi identitas dan kerjakan soal. Nilai pilihan ganda akan dihitung otomatis.</p></div></div>
+
+<form id="taskForm">
+<div class="card">
+<h3>Identitas Peserta Didik</h3>
+<div class="grid">
+<div><label>Nama lengkap *</label><input id="studentName" required placeholder="Nama kamu"></div>
+<div><label>Kelas *</label><input id="studentClass" required placeholder="Contoh: XII MIPA 1"></div>
+<div><label>Nomor absen</label><input id="studentNumber" placeholder="Contoh: 12"></div>
+<div><label>Nama sekolah</label><input id="school" placeholder="Nama sekolah"></div>
+</div>
+<p class="small">Nama akan digunakan untuk menyimpan hasil dan papan peringkat pada perangkat ini.</p>
+</div>
+
+<div class="card">
+<h3>A. Pilihan Ganda</h3>
+<p>Pilih satu jawaban yang paling tepat. Setiap soal bernilai 10 poin.</p>
+
+<div class="question"><b>1. Enzim disebut biokatalisator karena ...</b>
+<label><input type="radio" name="q1" value="B">A. menjadi sumber energi utama sel</label>
+<label><input type="radio" name="q1" value="A">B. mempercepat reaksi biologis tanpa habis bereaksi</label>
+<label><input type="radio" name="q1" value="C">C. mengubah semua substrat menjadi protein</label>
+<label><input type="radio" name="q1" value="D">D. bekerja pada semua jenis zat</label></div>
+
+<div class="question"><b>2. Tempat substrat berikatan dengan enzim disebut ...</b>
+<label><input type="radio" name="q2" value="A">A. sisi aktif</label>
+<label><input type="radio" name="q2" value="B">B. kofaktor</label>
+<label><input type="radio" name="q2" value="C">C. produk</label>
+<label><input type="radio" name="q2" value="D">D. inhibitor</label></div>
+
+<div class="question"><b>3. Gabungan apoenzim dan kofaktor disebut ...</b>
+<label><input type="radio" name="q3" value="A">A. substrat</label>
+<label><input type="radio" name="q3" value="B">B. holoenzim</label>
+<label><input type="radio" name="q3" value="C">C. inhibitor</label>
+<label><input type="radio" name="q3" value="D">D. produk</label></div>
+
+<div class="question"><b>4. Suhu terlalu tinggi dapat menurunkan aktivitas enzim karena ...</b>
+<label><input type="radio" name="q4" value="A">A. enzim berubah menjadi ATP</label>
+<label><input type="radio" name="q4" value="B">B. substrat selalu bertambah</label>
+<label><input type="radio" name="q4" value="C">C. enzim dapat mengalami denaturasi</label>
+<label><input type="radio" name="q4" value="D">D. energi aktivasi menjadi nol</label></div>
+
+<div class="question"><b>5. Enzim amilase berfungsi untuk ...</b>
+<label><input type="radio" name="q5" value="A">A. memecah lemak</label>
+<label><input type="radio" name="q5" value="B">B. memecah pati</label>
+<label><input type="radio" name="q5" value="C">C. membentuk oksigen dari air</label>
+<label><input type="radio" name="q5" value="D">D. menggandakan DNA</label></div>
+
+<div class="question"><b>6. Urutan mekanisme kerja enzim yang tepat adalah ...</b>
+<label><input type="radio" name="q6" value="A">A. produk → substrat → enzim rusak</label>
+<label><input type="radio" name="q6" value="B">B. enzim → produk → substrat</label>
+<label><input type="radio" name="q6" value="C">C. enzim dan substrat → kompleks → produk</label>
+<label><input type="radio" name="q6" value="D">D. substrat → enzim menjadi produk</label></div>
+
+<div class="question"><b>7. Berikut yang merupakan kofaktor anorganik adalah ...</b>
+<label><input type="radio" name="q7" value="A">A. ion Mg²⁺</label>
+<label><input type="radio" name="q7" value="B">B. glukosa</label>
+<label><input type="radio" name="q7" value="C">C. amilum</label>
+<label><input type="radio" name="q7" value="D">D. asam amino</label></div>
+
+<div class="question"><b>8. Enzim dapat digunakan berulang kali karena ...</b>
+<label><input type="radio" name="q8" value="A">A. selalu berubah menjadi produk</label>
+<label><input type="radio" name="q8" value="B">B. tidak ikut habis dalam reaksi</label>
+<label><input type="radio" name="q8" value="C">C. hanya bekerja satu kali</label>
+<label><input type="radio" name="q8" value="D">D. tidak memiliki sisi aktif</label></div>
+</div>
+
+<div class="card">
+<h3>B. Uraian Reflektif</h3>
+<p>Jawab dengan kalimat sendiri. Jawaban uraian tidak dinilai otomatis, tetapi dapat diperiksa guru.</p>
+<label>1. Jelaskan mengapa enzim disebut biokatalisator.</label>
+<textarea rows="3" id="essay1" placeholder="Tuliskan jawaban..."></textarea><br>
+<label>2. Jelaskan perbedaan apoenzim, kofaktor, dan holoenzim.</label>
+<textarea rows="3" id="essay2" placeholder="Tuliskan jawaban..."></textarea><br>
+<label>3. Sebutkan dua faktor yang memengaruhi kerja enzim dan jelaskan pengaruhnya.</label>
+<textarea rows="3" id="essay3" placeholder="Tuliskan jawaban..."></textarea><br>
+<label>4. Berikan dua contoh enzim beserta fungsinya.</label>
+<textarea rows="3" id="essay4" placeholder="Tuliskan jawaban..."></textarea>
+</div>
+
+<div class="card">
+<h3>C. Studi Kasus</h3>
+<p>Ekstrak hati diberi hidrogen peroksida. Tabung A berada pada suhu ruang dan menghasilkan banyak gelembung. Tabung B dipanaskan terlebih dahulu dan menghasilkan lebih sedikit gelembung.</p>
+<label>Kesimpulan yang paling tepat:</label>
+<select id="caseAnswer" required>
+<option value="">-- Pilih jawaban --</option>
+<option value="A">Pemanasan dapat merusak struktur enzim sehingga aktivitasnya menurun.</option>
+<option value="B">Pemanasan selalu membuat semua enzim bekerja lebih cepat.</option>
+<option value="C">Gelembung membuktikan bahwa enzim berubah menjadi produk.</option>
+<option value="D">Suhu tidak berpengaruh terhadap kerja enzim.</option>
+</select>
+</div>
+
+<button class="btn" type="submit">Kirim Tugas & Lihat Nilai</button>
+<button class="btn secondary" type="button" id="resetBtn">Reset Jawaban</button>
+</form>
+
+<div id="result" class="result">
+<h2>Hasil Tugas 1</h2>
+<p id="resultName"></p>
+<div class="score" id="scoreValue">0</div>
+<p id="scoreDescription"></p>
+<p id="caseFeedback"></p>
+<div class="callout" id="resultAdvice"></div>
+<button class="btn" id="saveBtn" type="button">Simpan ke Papan Peringkat</button>
+</div>
+</section>
+
+<section id="hasil">
+<div class="head"><span class="num">03</span><div><h2>Ketentuan Nilai</h2><p>Nilai otomatis dihitung dari 8 pilihan ganda dan 1 studi kasus.</p></div></div>
+<div class="card">
+<table><tr><th>Komponen</th><th>Bobot</th><th>Keterangan</th></tr>
+<tr><td>Pilihan ganda</td><td>80%</td><td>8 soal × 10 poin</td></tr>
+<tr><td>Studi kasus</td><td>20%</td><td>Benar = 20 poin</td></tr>
+<tr><td>Uraian</td><td>Catatan guru</td><td>Diperiksa secara manual</td></tr>
+</table>
+<p class="small">Nilai otomatis adalah nilai latihan. Guru dapat menambahkan nilai uraian sesuai rubrik sekolah.</p>
+</div>
+</section>
+
+<section id="ranking">
+<div class="head"><span class="num">04</span><div><h2>Papan Peringkat</h2><p>Data peringkat disimpan di browser/perangkat yang digunakan. Untuk peringkat seluruh kelas dari perangkat berbeda, diperlukan database online seperti Google Sheets atau Firebase.</p></div></div>
+<div class="card">
+<button class="btn secondary" id="clearRanking" type="button">Hapus Papan Peringkat di Perangkat Ini</button>
+<div id="rankingBox" style="margin-top:18px"></div>
+</div>
+</section>
+</main>
+<footer><h2 style="color:white">Belajar Biologi, Memahami Kehidupan.</h2><p>E-book interaktif • Enzim dan Metabolisme • Kelas XII</p></footer>
+
+<script>
+const keyAnswers={q1:"A",q2:"A",q3:"B",q4:"C",q5:"B",q6:"C",q7:"A",q8:"B"};
+let latestResult=null;
+
+function getRanking(){return JSON.parse(localStorage.getItem("bioRanking")||"[]")}
+function setRanking(data){localStorage.setItem("bioRanking",JSON.stringify(data))}
+function renderRanking(){
+ const box=document.getElementById("rankingBox"), data=getRanking().sort((a,b)=>b.score-a.score||a.time-b.time);
+ if(!data.length){box.innerHTML="<p class='small'>Belum ada data peringkat. Jadilah peserta pertama!</p>";return}
+ let html="<table><tr><th>Peringkat</th><th>Nama</th><th>Kelas</th><th>Nilai</th></tr>";
+ data.forEach((x,i)=>{html+=`<tr><td class="rank-badge">#${i+1}</td><td>${escapeHtml(x.name)}</td><td>${escapeHtml(x.klass)}</td><td><b>${x.score}</b></td></tr>`});
+ html+="</table>";box.innerHTML=html;
+}
+function escapeHtml(str){return String(str).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+function selected(name){return document.querySelector(`input[name="${name}"]:checked`)?.value||""}
+
+document.getElementById("taskForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ let correct=0;
+ Object.keys(keyAnswers).forEach(k=>{if(selected(k)===keyAnswers[k])correct++});
+ const caseCorrect=document.getElementById("caseAnswer").value==="A";
+ const score=correct*10+(caseCorrect?20:0);
+ const name=document.getElementById("studentName").value.trim();
+ const klass=document.getElementById("studentClass").value.trim();
+ latestResult={name,klass,score,time:Date.now()};
+ document.getElementById("resultName").textContent=`Peserta: ${name} • ${klass}`;
+ document.getElementById("scoreValue").textContent=score+"/100";
+ document.getElementById("scoreDescription").textContent=`Jawaban pilihan ganda benar: ${correct}/8. Studi kasus: ${caseCorrect?"benar":"belum tepat"}.`;
+ document.getElementById("caseFeedback").textContent=caseCorrect?"Studi kasus benar. Pemanasan berlebihan dapat menyebabkan denaturasi enzim.":"Pelajari kembali hubungan suhu dengan struktur dan aktivitas enzim.";
+ document.getElementById("resultAdvice").textContent=score>=80?"Bagus! Tetap periksa kembali bagian uraian agar pemahamanmu semakin lengkap.":score>=60?"Cukup baik. Pelajari kembali konsep sisi aktif, kofaktor, dan faktor kerja enzim.":"Jangan menyerah. Baca ulang materi, lalu coba kerjakan kembali dengan teliti.";
+ document.getElementById("result").style.display="block";
+ document.getElementById("result").scrollIntoView({behavior:"smooth"});
+});
+document.getElementById("saveBtn").addEventListener("click",()=>{
+ if(!latestResult)return;
+ const data=getRanking();
+ const existing=data.findIndex(x=>x.name.toLowerCase()===latestResult.name.toLowerCase()&&x.klass.toLowerCase()===latestResult.klass.toLowerCase());
+ if(existing>=0){if(latestResult.score>data[existing].score)data[existing]=latestResult}else data.push(latestResult);
+ setRanking(data);renderRanking();document.getElementById("ranking").scrollIntoView({behavior:"smooth"});
+ alert("Hasil berhasil disimpan ke papan peringkat perangkat ini.");
+});
+document.getElementById("resetBtn").addEventListener("click",()=>{
+ if(confirm("Reset seluruh jawaban?")){document.getElementById("taskForm").reset();document.getElementById("result").style.display="none";latestResult=null}
+});
+document.getElementById("clearRanking").addEventListener("click",()=>{
+ if(confirm("Hapus semua data peringkat pada perangkat ini?")){localStorage.removeItem("bioRanking");renderRanking()}
+});
+renderRanking();
+</script>
+</body>
+</html>
