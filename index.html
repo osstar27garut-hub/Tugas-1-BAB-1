@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tugas 1 - Enzim dan Metabolisme</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: #f3f5ff;
+  color: #25234a;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #5746c7, #8f65e8);
+  color: white;
+  padding: 35px 20px;
+  text-align: center;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 14px;
+}
+
+.container {
+  width: 92%;
+  max-width: 950px;
+  margin: 25px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(70, 60, 130, 0.1);
+}
+
+.card h2 {
+  color: #5746c7;
+  margin-bottom: 15px;
+  border-left: 5px solid #8f65e8;
+  padding-left: 12px;
+}
+
+.card h3 {
+  color: #5746c7;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #d5d3ed;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.question {
+  background: #f8f7ff;
+  padding: 18px;
+  margin: 15px 0;
+  border-radius: 15px;
+  border-left: 4px solid #8f65e8;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  background: linear-gradient(135deg, #5746c7, #8f65e8);
+  color: white;
+  padding: 14px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 8px 5px 8px 0;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.result {
+  display: none;
+  background: #effff2;
+  border: 2px solid #51b86c;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.result h2 {
+  color: #218c45;
+}
+
+.score {
+  font-size: 35px;
+  font-weight: bold;
+  color: #5746c7;
+  margin: 10px 0;
+}
+
+.status {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.correct {
+  color: green;
+}
+
+.wrong {
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>TUGAS 1</h1>
+  <p>Biologi Kelas XII Semester 1</p>
+  <p>Enzim dan Metabolisme</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Identitas Peserta Didik</h2>
+
+    <label for="nama">Nama Lengkap</label>
+    <input type="text" id="nama" placeholder="Masukkan nama lengkap">
+
+    <label for="kelas">Kelas</label>
+    <select id="kelas">
+      <option value="">Pilih Kelas</option>
+      <option value="XII MIPA 1">XII MIPA 1</option>
+      <option value="XII MIPA 2">XII MIPA 2</option>
+      <option value="XII MIPA 3">XII MIPA 3</option>
+      <option value="XII MIPA 4">XII MIPA 4</option>
+      <option value="XII MIPA 5">XII MIPA 5</option>
+    </select>
+  </div>
+
+  <div class="card">
+    <h2>Materi Singkat</h2>
+
+    <h3>Pengertian Enzim</h3>
+    <p>
+      Enzim adalah biokatalisator berupa protein yang berfungsi
+      mempercepat reaksi kimia dalam tubuh tanpa ikut habis
+      bereaksi. Enzim bekerja dengan menurunkan energi aktivasi.
+    </p>
+
+    <h3>Sifat-Sifat Enzim</h3>
+    <ul>
+      <li>Bekerja secara spesifik terhadap substrat tertentu.</li>
+      <li>Mempercepat reaksi kimia.</li>
+      <li>Tidak habis dalam proses reaksi.</li>
+      <li>Dipengaruhi oleh suhu dan pH.</li>
+      <li>Dapat mengalami denaturasi.</li>
+    </ul>
+
+    <h3>Faktor yang Memengaruhi Kerja Enzim</h3>
+    <ul>
+      <li>Suhu</li>
+      <li>Derajat keasaman atau pH</li>
+      <li>Konsentrasi substrat</li>
+      <li>Konsentrasi enzim</li>
+      <li>Inhibitor atau penghambat</li>
+    </ul>
+
+    <h3>Metabolisme</h3>
+    <p>
+      Metabolisme adalah seluruh reaksi kimia yang terjadi
+      di dalam tubuh makhluk hidup. Metabolisme dibedakan menjadi
+      anabolisme dan katabolisme.
+    </p>
+
+    <p>
+      Anabolisme merupakan proses penyusunan molekul sederhana
+      menjadi molekul kompleks dan membutuhkan energi.
+      Katabolisme merupakan proses penguraian molekul kompleks
+      menjadi molekul sederhana dan menghasilkan energi.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Instruksi Tugas</h2>
+
+    <ol>
+      <li>Bacalah materi tentang enzim dan metabolisme.</li>
+      <li>Jawablah seluruh soal pilihan ganda.</li>
+      <li>Pilih satu jawaban yang paling tepat.</li>
+      <li>Kerjakan secara mandiri dan jujur.</li>
+      <li>Tekan tombol "Periksa Jawaban" untuk melihat nilai.</li>
+    </ol>
+  </div>
+
+  <form id="quizForm">
+
+    <div class="card">
+      <h2>Soal Pilihan Ganda</h2>
+
+      <div class="question">
+        <p>1. Enzim berfungsi sebagai...</p>
+        <label><input type="radio" name="q1" value="A"> A. Sumber energi utama</label>
+        <label><input type="radio" name="q1" value="B"> B. Biokatalisator</label>
+        <label><input type="radio" name="q1" value="C"> C. Penghasil oksigen</label>
+        <label><input type="radio" name="q1" value="D"> D. Penyusun DNA</label>
+      </div>
+
+      <div class="question">
+        <p>2. Bagian enzim yang berikatan dengan substrat disebut...</p>
+        <label><input type="radio" name="q2" value="A"> A. Sisi pasif</label>
+        <label><input type="radio" name="q2" value="B"> B. Sisi penghambat</label>
+        <label><input type="radio" name="q2" value="C"> C. Sisi aktif</label>
+        <label><input type="radio" name="q2" value="D"> D. Sisi pelindung</label>
+      </div>
+
+      <div class="question">
+        <p>3. Enzim dapat mengalami denaturasi akibat...</p>
+        <label><input type="radio" name="q3" value="A"> A. Suhu yang sesuai</label>
+        <label><input type="radio" name="q3" value="B"> B. Suhu yang terlalu tinggi</label>
+        <label><input type="radio" name="q3" value="C"> C. Konsentrasi substrat rendah</label>
+        <label><input type="radio" name="q3" value="D"> D. Air yang cukup</label>
+      </div>
+
+      <div class="question">
+        <p>4. Faktor yang memengaruhi kerja enzim adalah...</p>
+        <label><input type="radio" name="q4" value="A"> A. Suhu dan pH</label>
+        <label><input type="radio" name="q4" value="B"> B. Warna larutan</label>
+        <label><input type="radio" name="q4" value="C"> C. Bentuk wadah</label>
+        <label><input type="radio" name="q4" value="D"> D. Jenis cahaya saja</label>
+      </div>
+
+      <div class="question">
+        <p>5. Proses penyusunan molekul sederhana menjadi kompleks disebut...</p>
+        <label><input type="radio" name="q5" value="A"> A. Katabolisme</label>
+        <label><input type="radio" name="q5" value="B"> B. Respirasi</label>
+        <label><input type="radio" name="q5" value="C"> C. Anabolisme</label>
+        <label><input type="radio" name="q5" value="D"> D. Fermentasi</label>
+      </div>
+
+      <div class="question">
+        <p>6. Proses penguraian senyawa kompleks menjadi sederhana disebut...</p>
+        <label><input type="radio" name="q6" value="A"> A. Anabolisme</label>
+        <label><input type="radio" name="q6" value="B"> B. Katabolisme</label>
+        <label><input type="radio" name="q6" value="C"> C. Sintesis</label>
+        <label><input type="radio" name="q6" value="D"> D. Fotosintesis</label>
+      </div>
+
+      <div class="question">
+        <p>7. Enzim mempercepat reaksi dengan cara...</p>
+        <label><input type="radio" name="q7" value="A"> A. Menaikkan energi aktivasi</label>
+        <label><input type="radio" name="q7" value="B"> B. Menghentikan reaksi</label>
+        <label><input type="radio" name="q7" value="C"> C. Menurunkan energi aktivasi</label>
+        <label><input type="radio" name="q7" value="D"> D. Mengubah hasil reaksi</label>
+      </div>
+
+      <div class="question">
+        <p>8. Zat yang dipengaruhi oleh kerja enzim disebut...</p>
+        <label><input type="radio" name="q8" value="A"> A. Produk</label>
+        <label><input type="radio" name="q8" value="B"> B. Substrat</label>
+        <label><input type="radio" name="q8" value="C"> C. Inhibitor</label>
+        <label><input type="radio" name="q8" value="D"> D. Koenzim</label>
+      </div>
+
+      <div class="question">
+        <p>9. Enzim yang bekerja optimal pada suhu dan pH tertentu menunjukkan sifat...</p>
+        <label><input type="radio" name="q9" value="A"> A. Tidak spesifik</label>
+        <label><input type="radio" name="q9" value="B"> B. Dipengaruhi lingkungan</label>
+        <label><input type="radio" name="q9" value="C"> C. Tidak dapat rusak</label>
+        <label><input type="radio" name="q9" value="D"> D. Tidak membutuhkan substrat</label>
+      </div>
+
+      <div class="question">
+        <p>10. Contoh proses katabolisme adalah...</p>
+        <label><input type="radio" name="q10" value="A"> A. Respirasi sel</label>
+        <label><input type="radio" name="q10" value="B"> B. Sintesis protein</label>
+        <label><input type="radio" name="q10" value="C"> C. Fotosintesis</label>
+        <label><input type="radio" name="q10" value="D"> D. Pembentukan glikogen</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Penilaian Guru</h2>
+
+      <label for="nilaiGuru">
+        Masukkan nilai tambahan dari guru (0–100)
+      </label>
+
+      <input
+        type="number"
+        id="nilaiGuru"
+        min="0"
+        max="100"
+        placeholder="Contoh: 85"
+        required
+      />
+
+      <p>
+        Bobot nilai pilihan ganda: 70%<br>
+        Bobot penilaian guru: 30%
+      </p>
+
+      <button type="submit">Periksa Jawaban</button>
+      <button type="button" onclick="window.print()">Cetak Hasil</button>
+    </div>
+
+  </form>
+
+  <div class="result" id="result">
+    <h2>Hasil Penilaian</h2>
+
+    <p id="identitasHasil"></p>
+
+    <div class="score" id="nilaiAkhir"></div>
+
+    <p id="status" class="status"></p>
+
+    <p id="detail"></p>
+
+    <h3>Catatan</h3>
+    <p id="catatan"></p>
+  </div>
+
+</div>
+
+<footer>
+  E-Book Biologi | Enzim dan Metabolisme
+</footer>
+
+<script>
+const kunciJawaban = {
+  q1: "B",
+  q2: "C",
+  q3: "B",
+  q4: "A",
+  q5: "C",
+  q6: "B",
+  q7: "C",
+  q8: "B",
+  q9: "B",
+  q10: "A"
+};
+
+document.getElementById("quizForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nama = document.getElementById("nama").value.trim();
+  const kelas = document.getElementById("kelas").value;
+  const nilaiGuru = Number(document.getElementById("nilaiGuru").value);
+
+  if (nama === "" || kelas === "") {
+    alert("Silakan lengkapi nama dan kelas terlebih dahulu.");
+    return;
+  }
+
+  if (nilaiGuru < 0 || nilaiGuru > 100 || isNaN(nilaiGuru)) {
+    alert("Nilai guru harus berada di antara 0 sampai 100.");
+    return;
+  }
+
+  let benar = 0;
+  let dijawab = 0;
+
+  for (let nomor in kunciJawaban) {
+    const jawaban = document.querySelector(
+      'input[name="' + nomor + '"]:checked'
+    );
+
+    if (jawaban) {
+      dijawab++;
+
+      if (jawaban.value === kunciJawaban[nomor]) {
+        benar++;
+      }
+    }
+  }
+
+  const nilaiPilihanGanda = benar * 10;
+  const nilaiAkhir = Math.round(
+    (nilaiPilihanGanda * 0.70) + (nilaiGuru * 0.30)
+  );
+
+  const status = nilaiAkhir >= 75
+    ? "TUNTAS"
+    : "BELUM TUNTAS";
+
+  const statusElement = document.getElementById("status");
+
+  statusElement.textContent = "Status: " + status;
+  statusElement.className = "status " +
+    (nilaiAkhir >= 75 ? "correct" : "wrong");
+
+  document.getElementById("identitasHasil").innerHTML =
+    "<strong>Nama:</strong> " + nama +
+    "<br><strong>Kelas:</strong> " + kelas;
+
+  document.getElementById("nilaiAkhir").textContent =
+    nilaiAkhir + "/100";
+
+  document.getElementById("detail").innerHTML =
+    "Jawaban benar: " + benar + " dari 10 soal<br>" +
+    "Soal dijawab: " + dijawab + " dari 10 soal<br>" +
+    "Nilai pilihan ganda: " + nilaiPilihanGanda + "<br>" +
+    "Nilai guru: " + nilaiGuru + "<br>" +
+    "Bobot pilihan ganda: 70%<br>" +
+    "Bobot nilai guru: 30%";
+
+  document.getElementById("catatan").textContent =
+    nilaiAkhir >= 75
+      ? "Selamat! Kamu telah mencapai nilai ketuntasan."
+      : "Tetap semangat. Pelajari kembali materi enzim dan metabolisme.";
+
+  document.getElementById("result").style.display = "block";
+
+  document.getElementById("result").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+</script>
+
+</body>
+        </html>
